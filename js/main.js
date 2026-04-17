@@ -181,3 +181,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbar");
+
+  if (window.scrollY > 0) {
+    navbar.classList.add("hide");
+  } else {
+    navbar.classList.remove("hide");
+  }
+});
